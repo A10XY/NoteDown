@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/NoteLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_4sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:orientation="vertical"
+    android:background="@drawable/note_item_background">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/NoteImage_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:adjustViewBounds="false"
+        android:layout_margin="@dimen/_5sdp"
+        android:visibility="gone"
+        app:riv_corner_radius_top_left="@dimen/_10sdp"
+        app:riv_corner_radius_top_right="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/NoteTitle_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:includeFontPadding="false"
+        android:text="@string/NOTE_TITLE"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textAlignment="viewStart"/>
+
+    <TextView
+        android:id="@+id/NoteText_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:includeFontPadding="false"
+        android:text="@string/NOTE_TEXT"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/white"
+        android:textAlignment="viewStart"/>
+
+    <TextView
+        android:id="@+id/NoteDateTime_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:includeFontPadding="false"
+        android:text="@string/NOTE_TITLE"
+        android:textSize="@dimen/_7ssp"
+        android:textColor="@color/white"
+        android:textAlignment="viewStart"/>
+</LinearLayout>

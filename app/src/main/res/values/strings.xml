@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Note Down</string>
+
+    <string name="Example">Example</string>
+
+    <!--Holders-->
+    <string name="NOTE_TITLE">Note Title</string>
+    <string name="NOTE_DATE">Note Date</string>
+    <string name="NOTE_TEXT">Note Text</string>
+    <string name="SETTINGS">Settings</string>
+    <string name="LANGUAGE">Language</string>
+
+    <string name="ENGLISH">English</string>
+    <string name="ARABIC">Arabic</string>
+
+
+</resources>

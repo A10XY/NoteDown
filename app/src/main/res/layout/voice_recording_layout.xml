@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/voice_recording_dialog_background">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Dialog_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <!--<TextView
+            android:id="@+id/Timer_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="00:00"
+            android:textSize="@dimen/_30ssp"
+            android:textStyle="bold" />-->
+
+        <Chronometer
+            android:id="@+id/Timer_Chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/_30ssp" />
+
+        <View
+            android:id="@+id/MicrophoneBackground_View"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Timer_Chronometer"
+            android:background="@drawable/microphone_background"/>
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:src="@drawable/ic_microphone"
+            app:layout_constraintTop_toTopOf="@id/MicrophoneBackground_View"
+            app:layout_constraintBottom_toBottomOf="@id/MicrophoneBackground_View"
+            app:layout_constraintStart_toStartOf="@id/MicrophoneBackground_View"
+            app:layout_constraintEnd_toEndOf="@id/MicrophoneBackground_View"
+            android:contentDescription="@string/app_name" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/VoiceWave_LottieView"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            app:layout_constraintTop_toTopOf="@id/MicrophoneBackground_View"
+            app:layout_constraintBottom_toBottomOf="@id/MicrophoneBackground_View"
+            app:layout_constraintStart_toStartOf="@id/MicrophoneBackground_View"
+            app:layout_constraintEnd_toEndOf="@id/MicrophoneBackground_View"
+            app:lottie_rawRes="@raw/circular_red_lines"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/UnderText_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/MicrophoneBackground_View"
+            android:text="Hold to record, release to save."
+            android:textSize="@dimen/_10ssp" />
+
+        <View
+            android:id="@+id/Line_View"
+            android:layout_width="0dp"
+            android:layout_height="0.25dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/UnderText_TextView"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/Cancel_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="4dp"
+            android:text="Cancel"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/RED_WAVE"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/Line_View"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="@id/Line_View"
+            app:layout_constraintTop_toBottomOf="@id/Line_View" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

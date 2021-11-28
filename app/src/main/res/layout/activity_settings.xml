@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/ActionBar_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/Back_ImageView"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="@string/app_name"
+            app:tint="@color/RED_WAVE"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/_1sdp"
+            android:text="@string/SETTINGS"
+            android:textAlignment="center"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/RED_WAVE"
+            android:fontFamily="@font/ubuntu_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Language_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/ActionBar_Layout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/LANGUAGE"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/Language_TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textSize="@dimen/_11ssp"
+            android:textAlignment="center"
+            android:fontFamily="@font/ubuntu_regular"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

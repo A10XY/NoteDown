@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Note Down</string>
+
+    <string name="Example">Example</string>
+
+    <!--Holders-->
+    <string name="NOTE_TITLE">عنوان الملاحظة</string>
+    <string name="NOTE_DATE">تاريخ الملاحظة</string>
+    <string name="NOTE_TEXT">نص الملاحظة</string>
+    <string name="SETTINGS">الإعدادات</string>
+    <string name="LANGUAGE">اللغة</string>
+
+    <string name="ENGLISH">الإنجليزية</string>
+    <string name="ARABIC">العربية</string>
+</resources>
